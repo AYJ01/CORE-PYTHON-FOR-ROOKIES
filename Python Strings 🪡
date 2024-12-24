@@ -1,16 +1,21 @@
 Strings are enclosed by either single (') or double (") quotation marks.A string can be pretty much anything
 
-Text: "Hello, world!" 🌍
+Text: "Hello, world!" 
 
-Numbers as Text: "12345" 🔢
+Numbers as Text: "12345" 
 
-Special Characters: "!@#$%^&*()" 🎉
+Special Characters: "!@#$%^&*()" 
 
-Whitespace: " " (three spaces) ⠀🕳️
+Whitespace: " " (three spaces) ⠀
 
-Empty String: "" or '' 📭
+Empty String: "" or '' 
 
-Multi-line Text: Enclosed in triple quotes (''' or """) 📜
+Multi-line Text: Enclosed in triple quotes (''' or """) 
 
-Combination of Different Characters: "Python3 is fun!" 🎈
+Combination of Different Characters: "Python3 is fun!" 
+
+so basically any thing inside double quotes is considered as string the python except
+
+escape sequences and slash,double quots iteself and the single quots too 
+Note : single quotes are also used for covering strings instead of double quotes
 
