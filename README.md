@@ -1,4 +1,4 @@
-# CORE-PYTHON-FOR-ROOKIES
+# Python Tutorial for Beginners: Learn Python 3
 
 <div align="center">
 
@@ -7,17 +7,17 @@
 ![Format](https://img.shields.io/badge/Format-Theory%20%2B%20Practice-FF9800?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-2196F3?style=for-the-badge)
 
-**A structured, hands-on Python curriculum from first principles to professional-level systems.**
+**A structured, hands-on Python 3 tutorial from first principles to professional-level systems.**
 
-[Start learning](#learning-path) · [Theory notes](theory-notes/) · [Practice projects](theory-notes/practice-and-projects.md) · [Contribute](#contributing)
+[Start learning](#learning-path) · [Theory notes](theory-notes/) · [Data structures](data-structures/) · [Advanced data structures](advanced-data-structures/) · [Practice projects](theory-notes/practice-and-projects.md) · [Contribute](#contributing)
 
 </div>
 
 ---
 
-## About this repository
+## Learn Python for beginners
 
-`CORE-PYTHON-FOR-ROOKIES` is a beginner-friendly Python learning system organized as a complete mastery path. It combines concise theory, runnable examples, practical exercises, cross-topic projects, and expanded advanced material.
+`python-for-beginners` is a beginner-friendly Python learning system organized as a complete mastery path. It combines concise theory, runnable examples, practical exercises, and cross-topic projects. The lessons begin with installation and variables and progress through software design, testing, networking, concurrency, data structures, and advanced algorithms.
 
 The repository is designed for:
 
@@ -35,12 +35,12 @@ Read every page as a building block: understand the idea, predict the behavior, 
 
 | Stage | Topics | Skills gained |
 |:---|:---|:---|
-| **01 — Foundations** | [Getting Started](getting-started/) · [Variables](variables/) · [Operators](operators/) · [Strings](strings/) | Install Python, write and run programs, store values, use types, work with text, and evaluate expressions |
-| **02 — Logic and Collections** | [Conditional Statements](conditional-statements/) · [Collections](collections/) · [Functions](functions/) · [Iterators](iterators/) | Make decisions, organize data, reuse logic, repeat work, and understand iteration |
-| **03 — Building Programs** | [Modules and Packages](modules-and-packages/) · [Virtual Environments](virtual-environments/) · [File Handling](file-handling/) · [Exception Handling](exception-handling/) · [Testing](testing/) | Split projects into modules, isolate dependencies, persist data, handle failures, and verify behavior |
-| **04 — Software Design** | [Object-Oriented Programming](object-oriented-programming/) · [Regular Expressions](regular-expressions/) · [Databases](databases/) · [Networking](networking/) | Model domain concepts, process text, query persistent data, and communicate over a network |
-| **05 — Performance and Scale** | [Concurrency](concurrency/) · [Advanced File Handling](advanced-file-handling/) · [Advanced Functions](advanced-functions/) · [Advanced OOP](advanced-object-oriented-programming/) | Design reusable abstractions and work efficiently with asynchronous tasks, large files, and advanced language features |
-| **06 — Professional Python** | [Advanced Modules](advanced-modules-and-packages/) · [Advanced Testing](advanced-testing/) · [Advanced Networking](advanced-networking/) · [Theory Notes](theory-notes/) | Package and distribute software, test complex systems, build resilient network services, and connect the complete curriculum |
+| **01 — Foundations** | [Getting Started](getting-started/) · [Variables](variables/) · [Operators](operators/) · [Strings](strings/) | Install Python, write and run programs, store values, manipulate text, and evaluate expressions |
+| **02 — Logic and Collections** | [Conditional Statements](conditional-statements/) · [Collections](collections/) · [Functions](functions/) · [Iterators](iterators/) | Make decisions, organize information, reuse logic, and repeat work |
+| **03 — Building Programs** | [Modules and Packages](modules-and-packages/) · [Virtual Environments](virtual-environments/) · [File Handling](file-handling/) · [Exception Handling](exception-handling/) · [Testing](testing/) | Organize projects, manage dependencies, save data, handle failures, and verify behavior |
+| **04 — Software Design** | [Object-Oriented Programming](object-oriented-programming/) · [Regular Expressions](regular-expressions/) · [Databases](databases/) · [Networking](networking/) | Model problems, process text, store information, and communicate with APIs and services |
+| **05 — Performance and Data** | [Data Structures](data-structures/) · [Concurrency](concurrency/) · [Advanced File Handling](advanced-file-handling/) · [Advanced Functions](advanced-functions/) · [Advanced OOP](advanced-object-oriented-programming/) | Choose appropriate structures and abstractions, process tasks, and scale Python programs |
+| **06 — Advanced Python** | [Advanced Data Structures](advanced-data-structures/) · [Advanced Modules](advanced-modules-and-packages/) · [Advanced Testing](advanced-testing/) · [Advanced Networking](advanced-networking/) · [Theory Notes](theory-notes/) | Analyze complex structures, package software, test systems, and build network services |
 
 > Follow the stages in order if you are new to Python. Experienced learners may enter at any topic, but every advanced section assumes familiarity with variables, functions, exceptions, modules, and testing.
 
@@ -49,7 +49,7 @@ Read every page as a building block: understand the idea, predict the behavior, 
 ## Repository map
 
 ```text
-CORE-PYTHON-FOR-ROOKIES/
+python-for-beginners/
 ├── getting-started/              Installation, execution, comments, first programs
 ├── variables/                    Values, names, types, conversions
 ├── operators/                    Arithmetic, logic, comparisons, precedence
@@ -68,7 +68,10 @@ CORE-PYTHON-FOR-ROOKIES/
 ├── databases/                   SQLite, tables, CRUD, transactions
 ├── networking/                  Sockets, HTTP, APIs
 ├── concurrency/                 Threads, processes, asyncio, synchronization
-├── advanced-file-handling/       Archives, compression, locking, large files
+├── data-structures/             Lists, stacks, queues, trees, graphs, heaps, and hash tables
+├── advanced-data-structures/    AVL and red-black trees, tries, segment trees, union-find,
+│                               caches, bloom filters, graph algorithms, and more
+├── advanced-file-handling/      Archives, compression, locking, large files
 ├── advanced-functions/          Recursion, closures, decorators, annotations
 ├── advanced-object-oriented-programming/
 │                               Composition, ABCs, dataclasses, descriptors
@@ -140,6 +143,8 @@ No third-party runtime dependencies are required to study the core Markdown and 
 - [Complete learning path](theory-notes/learning-path.md)
 - [Directory-by-directory guide](theory-notes/directory-guide.md)
 - [Python glossary](theory-notes/glossary.md)
+- [Data structures tutorial](data-structures/README.md)
+- [Advanced data structures tutorial](advanced-data-structures/README.md)
 - [Practice and project ideas](theory-notes/practice-and-projects.md)
 
 Each topic directory follows a consistent pattern:
@@ -193,7 +198,11 @@ print(average([72, 88, 91, 64]))
 
 ### Level 4 — persistence and software structure
 
-Combine `dataclasses`, functions, exception handling, SQLite, and tests to build a contact book or task tracker. Move data access behind small functions, validate input, use parameterized SQL, and test both successful and failure scenarios.
+Combine `dataclasses`, functions, exception handling, SQLite, and tests to build a contact book or task tracker. Move data access behind small functions, validate input, use parameterized SQL, and test both successful and failure paths.
+
+### Level 5 — data structures and algorithms
+
+Explore [data structures](data-structures/) for lists, stacks, queues, trees, graphs, heaps, and hash tables. Continue with [advanced data structures](advanced-data-structures/) for balanced trees, tries, range structures, union-find, caches, and probabilistic structures.
 
 ---
 
@@ -223,7 +232,7 @@ Start with the final exception name and message, then use the traceback to locat
 <details>
 <summary><strong>Build progressively</strong></summary>
 
-Do not begin with a framework or a large application. Start with a calculator, quiz, guessing game, contact book, file processor, or simple server. Add features only after the basic version works and is tested.
+Do not begin with a framework or a large application. Start with a calculator, quiz, guessing game, contact book, file processor, or simple server. Add features only after the basic version works.
 
 </details>
 
@@ -242,10 +251,11 @@ Revisit a topic after a few days. Explain it in your own words, write an example
 2. **Everyday Python:** shopping list, word analyzer, expense tracker
 3. **Files:** notes manager, CSV report, JSON settings tool
 4. **Databases:** contacts, inventory, or task manager
-5. **Object-oriented:** library catalog, game characters, banking system
-6. **Testing:** build every project addition test-first
-7. **Networking:** API client, socket server, or HTTP request tool
-8. **Advanced:** async service, protocol parser, reusable package, or plugin system
+5. **Data structures:** stack-based undo, queue scheduler, trie, graph search
+6. **Object-oriented:** library catalog, game characters, banking system
+7. **Testing:** build every project addition test-first
+8. **Networking:** API client, socket server, or HTTP request tool
+9. **Advanced:** balanced search tree, range engine, cache, async service, reusable package
 
 Choose one or two of these projects instead of trying to learn every feature at once.
 
@@ -270,7 +280,7 @@ Open an issue or pull request with a short description of the improvement. Small
 
 ## Learning philosophy
 
-Python mastery is not achieved by memorizing a language specification. It is the ability to translate a real problem into clear code, choose the right abstractions, verify behavior, recover from errors, and improve the design through testing and review.
+Python mastery is not achieved by memorizing a language specification. It is the ability to translate a real problem into clear code, choose the right abstractions, verify behavior, recover from errors, and explain decisions.
 
 > Learn slowly enough to understand. Build consistently enough to progress. Explain clearly enough to retain.
 
