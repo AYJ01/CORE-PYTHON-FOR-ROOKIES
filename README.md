@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img src="assets/banner-light.svg" alt="Python Tutorial for Beginners: learn Python 3 from first principles to professional systems" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/banner-light.svg">
+  <img src="/banner-light.svg" alt="Python Tutorial for Beginners: learn Python 3 from first principles to professional systems" width="100%">
 </picture>
 
 <h1>Python Tutorial for Beginners: Learn Python 3</h1>
@@ -289,7 +289,7 @@ See the [LICENSE](LICENSE) file for terms of use before copying or redistributin
 
 <div align="center">
 
-<img src="assets/divider.svg" alt="" width="100%">
+<img src="/divider.svg" alt="" width="100%">
 
 <sub>Keep learning. Keep experimenting. Keep building.</sub>
 
