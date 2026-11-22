@@ -1,11 +1,14 @@
-# Python Iterators
+# Python Iterators and Loops
 
-Iterators provide a uniform way to traverse values one item at a time.
+This section combines loop structures with Python iteration.
 
 ## Navigation
 
 - [Repository README](../README.md)
-- [Iterators](README.md)
+- [Iterators and Loops](README.md)
+- [For loops](for-loops.md)
+- [While loops](while-loops.md)
+- [Loop control](loop-control.md)
 - [Using iterators](using.md)
 - [The iterator protocol](protocol.md)
 - [Custom iterators](custom.md)
@@ -16,16 +19,20 @@ Iterators provide a uniform way to traverse values one item at a time.
 ## Example
 
 ```python
-numbers = iter([10, 20, 30])
+for number in range(1, 6):
+    print(number)
 
-print(next(numbers))
-print(next(numbers))
-print(next(numbers))
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
 ```
 
-## Key ideas
+## Iteration categories
 
-- An **iterable** can be converted into an iterator with `iter()`.
-- An **iterator** returns values one at a time with `next()`.
-- Iterators are stateful and generally consumed once.
-- `for` loops automatically obtain and advance iterators.
+- `for` loops traverse iterables.
+- `while` loops repeat while a condition is true.
+- `iter()` creates an iterator.
+- `next()` retrieves iterator values manually.
+- Custom iterators implement `__iter__()` and `__next__()`.
+- Generators create iterators using `yield`.

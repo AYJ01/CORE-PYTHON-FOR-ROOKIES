@@ -1,26 +1,39 @@
-# Iterators Practical Questions
+# Practical Iterator and Loop Questions
 
-1. Convert a list into an iterator.
-2. Retrieve three values with `next()`.
-3. Catch `StopIteration` safely.
-4. Re-use `iter()` on an existing iterator.
-5. Demonstrate that a list iterator is consumed once.
-6. Create a custom counter iterator.
-7. Create a countdown iterator.
-8. Implement `__iter__()` and `__next__()` in a class.
-9. Create a generator that yields even numbers.
-10. Create a generator for a countdown.
-11. Convert a generator expression to a list.
-12. Use `enumerate()` with a custom starting index.
-13. Combine two lists with `zip()`.
-14. Reverse a sequence using `reversed()`.
-15. Sort values with `sorted()`.
-16. Filter values with `filter()`.
-17. Transform values with `map()`.
-18. Chain transformations lazily.
-19. Explain the difference between iterable and iterator.
-20. Explain why a generator is memory-efficient.
+## Basic loops
+
+1. Print numbers 1 through 10 with `for`.
+2. Print numbers 1 through 10 with `while`.
+3. Print every character in a string.
+4. Iterate over a list.
+5. Iterate over a tuple.
+6. Iterate over a set.
+7. Iterate over dictionary keys and items.
+8. Create an indexed loop with `enumerate()`.
+9. Combine two lists with `zip()`.
+
+## Loop control
+
+10. Use `break` to stop at a selected value.
+11. Use `continue` to skip a selected value.
+12. Write a loop whose `else` executes normally.
+13. Prevent an infinite `while` loop.
+14. Build a menu loop that ends with `quit`.
+
+## Iterators and generators
+
+15. Convert a list into an iterator.
+16. Retrieve values with `next()`.
+17. Catch `StopIteration`.
+18. Compare an iterable and an iterator.
+19. Create a custom iterator class.
+20. Create a generator with `yield`.
+21. Create a generator expression.
+22. Filter values with `filter()`.
+23. Transform values with `map()`.
+24. Reverse values with `reversed()`.
+25. Sort values with `sorted()`.
 
 ## Mini-project
 
-Create a range-like iterator that accepts `start`, `stop`, and `step`, supports forward and backward iteration, and raises `StopIteration` once the sequence is complete.
+Build a number-guessing game that uses a `while` loop, accepts multiple guesses, uses `break` for success or exit, and reports the number of attempts.
