@@ -11,6 +11,27 @@ print(a > b)
 print(a and b)
 ```
 
+## Navigation
+
+- [Repository README](../README.md)
+- [Variables](../variables/README.md)
+- [Data types](../data-types/README.md)
+- [Operators](README.md)
+- [Practical questions](practical-questions.md)
+
+## Quick reference
+
+| Category | Operators | Reference |
+|---|---|---|
+| Arithmetic | `+ - * / // % **` | [Arithmetic operators](arithmetic.md) |
+| Assignment | `= += -= *= /= //= %= **=` | [Assignment operators](assignment.md) |
+| Comparison | `== != > < >= <=` | [Comparison operators](comparison.md) |
+| Logical | `and or not` | [Logical operators](logical.md) |
+| Identity | `is is not` | [Identity operators](identity.md) |
+| Membership | `in not in` | [Membership operators](membership.md) |
+| Bitwise | `& | ^ ~ << >>` | [Bitwise operators](bitwise.md) |
+| Precedence | Controls evaluation order | [Operator precedence](precedence.md) |
+
 ## Operator categories
 
 - [Arithmetic operators](arithmetic.md): calculate numerical values.
@@ -92,6 +113,16 @@ print(5 << 1)
 print(5 >> 1)
 ```
 
+## Precedence
+
+```python
+print(2 + 3 * 4)
+print((2 + 3) * 4)
+print(2 ** 3 ** 2)
+```
+
+Use [operator precedence](precedence.md) for the complete evaluation order and precedence rules.
+
 ## Practical checklist
 
 Before continuing, make sure you can:
@@ -102,4 +133,5 @@ Before continuing, make sure you can:
 - [ ] Use `and`, `or`, and `not` in conditions.
 - [ ] Distinguish identity from value equality.
 - [ ] Test membership in strings and collections.
-- [ ] Understand operator precedence.
+- [ ] Understand and use bitwise operators.
+- [ ] Predict expression evaluation using operator precedence.
