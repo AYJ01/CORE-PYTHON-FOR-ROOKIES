@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="/banner-light.svg">
   <img src="assets/banner-light.svg" alt="Python for Rookies: learn Python 3 one small step at a time" width="100%">
 </picture>
 
@@ -107,7 +107,7 @@ Check the repository for license information before reusing or distributing its 
 
 <div align="center">
 
-<img src="assets/divider.svg" alt="" width="100%">
+<img src="/divider.svg" alt="" width="100%">
 
 <sub>Keep learning. Keep experimenting. Keep going.</sub>
 
